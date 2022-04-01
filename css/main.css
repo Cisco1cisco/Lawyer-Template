@@ -54,3 +54,45 @@ body {
 
 /* Start Components */
 /* End Components */
+
+/* Start Header */
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+header .logo {
+    font-size: 30px;
+    color: var(--main-color, #f8d92b);
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color, #f8d92b);
+}
+
+header nav ul li:last-of-type {
+    margin-left: 20px;
+}
+
+header nav ul li i {
+    color: var(--main-color, #f8d92b);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* End Header */
