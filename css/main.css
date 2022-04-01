@@ -603,6 +603,7 @@ header img {
     -o-border-radius: 40px;
     text-transform: capitalize;
     position: relative;
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
@@ -633,3 +634,126 @@ header img {
 }
 
 /* End Contact */
+
+/* Strat Info */
+
+.info {
+    padding-top: 50px;
+    background-color: #2a2a2c;
+}
+
+.info .container .up {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .info .container .up {
+        flex-direction: column;
+        border-bottom: none;
+        padding-bottom: 20px;
+    }
+}
+
+.info .container .up div {
+    flex-basis: calc((100% / 3) - 60px);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .info .container .up div {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.info .container .up div h2.logo {
+    font-size: 30px;
+    color: var(--main-color, #f8d92b);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.info .container .up div p {
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.info .container .up div h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.info .container .up div.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info .container .up div.form input {
+    border: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .info .container .up div.form input {
+        width: 70%;
+    }
+}
+
+.info .container .up div.form input:focus {
+    outline: none;
+}
+
+.info .container .up div.form button {
+    border: none;
+    background-color: var(--main-color, #f8d92b);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.info .container .icons {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.info .container .icons div {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.info .container .icons div i {
+    color: #2a2a2c;
+}
+
+/* End Info */
