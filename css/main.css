@@ -61,6 +61,7 @@ header {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     width: 100%;
 }
@@ -69,6 +70,12 @@ header .logo {
     font-size: 30px;
     color: var(--main-color, #f8d92b);
     font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    header nav {
+        display: none;
+    }
 }
 
 header nav ul {
@@ -95,4 +102,186 @@ header nav ul li i {
     cursor: pointer;
 }
 
+header img {
+    width: 50px;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    header img {
+        display: block;
+    }
+}
+
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.landing .shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35px;
+}
+
+@media (max-width: 768px) {
+    .landing .shape {
+        display: none;
+    }
+}
+
+.landing .shape div {
+    margin-bottom: 20px;
+}
+
+.landing .shape .number {
+    color: #464646;
+}
+
+.landing .shape div:not(div.number) {
+    background-color: var(--main-color, #f8d92b);
+    width: 2px;
+    height: 160px;
+}
+
+.landing .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .landing .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .content {
+        flex-direction: column;
+    }
+}
+
+.landing .content img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+@media (min-width: 991px) {
+    .landing .content img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .content img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .content img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.landing .content .text {
+    width: 50%;
+}
+
+@media (max-width: 576px) {
+    .landing .content .text {
+        width: 100%;
+    }
+}
+
+.landing .content .text h1 {
+    font-size: 40px;
+    color: var(--sub-color, #000205);
+}
+
+.landing .content .text p {
+    color: var(--sub-color, #000205);
+    margin: 35px 0 50px;
+}
+
+.landing .content .text a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--main-color, #f8d92b);
+    width: fit-content;
+    text-transform: capitalize;
+    color: white;
+    padding: 15px 40px 15px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+.landing .content .text a:hover {
+    box-shadow: 0px 6px 10px -1px rgb(0 0 0 / 17%)
+}
+
+@media (max-width: 576px) {
+    .landing .content .text a {
+        margin: auto;
+    }
+}
+
+.landing .content .text a::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.landing .content .text nav {
+    margin: 50px 0 0;
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    .landing .content .text nav {
+        justify-content: center;
+    }
+}
+
+.landing .content .text nav .icon {
+    margin-right: 10px;
+    background-color: var(--main-color, #f8d92b);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.landing .content .text nav .icon:hover {
+    background-color: #585858;
+    color: white;
+}
+
+/* End Landing */
