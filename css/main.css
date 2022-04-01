@@ -757,3 +757,17 @@ header img {
 }
 
 /* End Info */
+
+/* Start Footer */
+
+footer {
+    padding: 25px 0;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* End Footer */
