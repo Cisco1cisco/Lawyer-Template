@@ -525,3 +525,111 @@ header img {
 }
 
 /* End Blog */
+
+/* Start Contact */
+
+.contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+    }
+}
+
+
+.contact .container .content {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .contact .container .content {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.contact .container .content h2 {
+    font-size: 26px;
+    color: var(--sub-color, #000205);
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .contact .container .content h2 {
+        text-align: center;
+    }
+}
+
+.contact .container .content form {
+    margin-bottom: 50px;
+}
+
+.contact .container .content form input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #252525;
+    border-color: transparent transparent #252525 transparent;
+    padding: 10px 0;
+}
+
+.contact .container .content form input:focus {
+    outline: none;
+}
+
+.contact .container .content form input[type="tel"] {
+    margin-bottom: 60px;
+}
+
+.contact .container .content button {
+    border: none;
+    background-color: var(--main-color, #f8d92b);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .contact .container .content button {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+.contact .container img {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .contact .container img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact .container img {
+        width: 100%;
+    }
+}
+
+/* End Contact */
