@@ -96,6 +96,10 @@ header {
     width: 100%;
 }
 
+header.sub-page {
+    position: relative;
+}
+
 header .logo {
     font-size: 30px;
     color: var(--main-color, #f8d92b);
@@ -294,6 +298,10 @@ header img {
     background-color: #f8faf9;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.about.sub-page {
+    margin-top: 0;
 }
 
 .about .container {
